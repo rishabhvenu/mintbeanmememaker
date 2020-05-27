@@ -1,0 +1,11 @@
+<%- include("./header.ejs") %>
+<h1>Trending Images:</h1>
+<% memes.forEach(memeData => { %>
+  <div class="inline memewrap">
+    <img class="meme" src="<%= memeData.url %>" alt="<%= memeData.id %>" width="400" height="300"/>
+    <div class="middle">
+      <div class="text">Click to Caption</div>
+    </div>
+  </div>
+<% }); %>
+<%- include("./footer.ejs") %>

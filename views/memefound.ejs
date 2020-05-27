@@ -1,0 +1,11 @@
+<%- include("./header.ejs") %>
+<h1>Edit Meme Caption</h1>
+<img id="memecaption" src="<%= memeurl %>" alt="<%= memeId %>"/>
+<br />
+
+<form>
+    <input class="captext" id="firsttext" placeholder="Enter First Text" required/><br />
+    <input class="captext" id="secondtext" placeholder="Enter Second Text" required/><br />
+    <button id="inputbtn">Caption meme!</button>
+</form>
+<%- include("./footer.ejs") %>
